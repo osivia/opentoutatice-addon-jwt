@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<component name="org.osivia.jwt.service">
+	<service>
+		<provide interface="org.osivia.jwt.service.JWTTokenService" />
+	</service>
+
+	<implementation class="org.osivia.jwt.service.JWTTokenServiceImpl" />
+	
+	<extension-point name="token">
+		<object class="org.osivia.jwt.service.TokenDescriptor" />
+	</extension-point>
+</component>

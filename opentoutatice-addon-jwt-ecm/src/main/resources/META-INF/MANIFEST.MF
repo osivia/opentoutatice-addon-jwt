@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Category: stateful
+Bundle-Name: Opentoutatice addon managing jwt
+Bundle-Localization: plugin
+Bundle-ManifestVersion: 1
+Bundle-SymbolicName: org.osivia.addon.jwt;singleton:=true
+Nuxeo-Component: OSGI-INF/automation/toutatice-operations-contrib.xml,
+ OSGI-INF/service/toutatice-jwttokenservice-contrib.xml

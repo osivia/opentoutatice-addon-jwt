@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<component name="org.osivia.onlyoffice.automation">
+
+	<require>org.osivia.jwt.service</require>
+
+	<extension target="org.nuxeo.ecm.core.operation.OperationServiceComponent" point="operations">
+
+        <operation class="org.osivia.jwt.automation.GetJWTToken" />
+
+	</extension>
+
+</component>
