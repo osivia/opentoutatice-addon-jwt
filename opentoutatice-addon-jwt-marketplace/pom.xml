@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>opentoutatice-ecm.jwt</groupId>
 		<artifactId>opentoutatice-jwt-parent</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>opentoutatice-addon-jwt-marketplace</artifactId>
@@ -36,19 +36,5 @@
 		</plugins>
 	</build>
 
-	<scm>
-		<developerConnection>scm:svn:http://projet.toutatice.fr/repos/toutatice-ecm/opentoutatice-addons/opentoutatice-jwt/tags/1.0.0-SNAPSHOT/trunk</developerConnection>
-	</scm>
-
-	<distributionManagement>
-		<repository>
-			<id>toutatice-releases</id>
-			<url>http://projet.toutatice.fr/nexus/content/repositories/toutatice-releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>toutatice-snapshots</id>
-			<url>http://projet.toutatice.fr/nexus/content/repositories/toutatice-snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 </project>
