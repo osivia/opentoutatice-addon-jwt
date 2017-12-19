@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 	<name>jwt feature - parent</name>
 	<description>jwt addon.</description>
-	<version>4.4-RC1</version>
+	<version>4.4-SNAPSHOT</version>
 
 	<properties>
 		<nuxeo.version>6.0-HF34</nuxeo.version>
@@ -100,7 +100,7 @@
 	</build>
 
 	<scm>
-		<developerConnection>scm:svn:http://projet.toutatice.fr/repos/toutatice-ecm/opentoutatice-addons/opentoutatice-jwt/tags/4.4-RC1</developerConnection>
+		<developerConnection>scm:svn:http://projet.toutatice.fr/repos/toutatice-ecm/opentoutatice-addons/opentoutatice-jwt/trunk</developerConnection>
 	</scm>
 
 	<distributionManagement>
