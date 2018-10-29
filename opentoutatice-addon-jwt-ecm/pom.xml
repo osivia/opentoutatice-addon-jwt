@@ -5,7 +5,7 @@
     <parent>
         <groupId>opentoutatice-ecm.jwt</groupId>
         <artifactId>opentoutatice-jwt-parent</artifactId>
-        <version>4.4-SNAPSHOT</version>
+        <version>4.7-SNAPSHOT</version>
     </parent>
     
     <artifactId>opentoutatice-addon-jwt-ecm</artifactId>
