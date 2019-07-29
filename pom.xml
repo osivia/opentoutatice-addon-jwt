@@ -11,18 +11,19 @@
 	<version>4.7-SNAPSHOT</version>
 
 	<properties>
-		<nuxeo.version>6.0-HF34</nuxeo.version>
-		<nuxeo.cap.distribution.version>6.0</nuxeo.cap.distribution.version>
-		<ottc.version>4.4.3-RC1</ottc.version>
+		<nuxeo.version>6.1.0</nuxeo.version>
+		<!-- <nuxeo.cap.distribution.version>6.0</nuxeo.cap.distribution.version> --> 
+		<ottc.version>4.7.17</ottc.version>
 	</properties>
 
 	<modules>
 	   <module>opentoutatice-addon-jwt-ecm</module>
-	   <module>opentoutatice-addon-jwt-marketplace</module>
+	   <!-- <module>opentoutatice-addon-jwt-marketplace</module> -->
 	</modules>
 	
 	<dependencyManagement>
 		<dependencies>
+		<!-- 
 		     <dependency>
 		        <groupId>org.nuxeo.ecm.distribution</groupId>
 		        <artifactId>nuxeo-distribution</artifactId>
@@ -37,7 +38,7 @@
 		        <version>${nuxeo.cap.distribution.version}</version>
 		        <type>pom</type>
 		    </dependency>
-		    
+		    -->
 		    <dependency>
 				<groupId>org.nuxeo.ecm.automation</groupId>
 				<artifactId>nuxeo-automation-core</artifactId>
@@ -49,7 +50,6 @@
 		    	<artifactId>nuxeo-features-parent</artifactId>
 		    	<version>${nuxeo.version}</version>
 			</dependency>
-            
 			<dependency>
 				<groupId>opentoutatice-ecm.platform</groupId>
 				<artifactId>opentoutatice-ecm-platform-core</artifactId>
@@ -84,7 +84,17 @@
 					<source>1.7</source>
 					<target>1.7</target>
 				</configuration>
-			</plugin> 
+			</plugin>
+            <!-- Disable strict javadoc checking since java8 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <additionalOptions>
+                        <additionalOption>-Xdoclint:none</additionalOption>
+                    </additionalOptions>
+                </configuration>
+            </plugin>			
 		</plugins>			
 		<pluginManagement>
 			<plugins>
@@ -105,17 +115,16 @@
 		<tag>HEAD</tag> 
     </scm>
 
-
-	<distributionManagement>
-		<repository>
-			<id>toutatice-releases</id>
-			<url>http://projet.toutatice.fr/nexus/content/repositories/toutatice-releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>toutatice-snapshots</id>
-			<url>http://projet.toutatice.fr/nexus/content/repositories/toutatice-snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>osivia-releases</id>
+            <url>http://www.osivia.org/nexus/content/repositories/osivia-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>osivia-snapshots</id>
+            <url>http://www.osivia.org/nexus/content/repositories/osivia-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 	
 </project>
 
